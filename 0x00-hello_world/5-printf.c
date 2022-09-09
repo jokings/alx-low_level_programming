@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
- * main-main block
- * return: 0
+ * main - print the string in the printf function
+ *
+ * Description: this program print with proper grammar..
+ * Return: 0
  */
 int main(void)
 {
