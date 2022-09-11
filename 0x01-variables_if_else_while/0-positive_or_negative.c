@@ -4,10 +4,11 @@
 /**
  * Main - This programm will assign a random number to the
  * variables n each time it is executed.
- * if the number is greater than 0: is postive
+ *
+ * Description: 'if the number is greater than 0: is postive
  * if the number is 0: is zero
- * if the number is less than o: is negative
- * Return: o
+ * if the number is less than o: is negative'
+ * Return: 0
  */
 int main(void)
 {
@@ -19,11 +20,11 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-	else if ( n < 0)
+	else if (n < 0)
 	{
 		printf("%d is negative\n", n);
 	}
-	else 
+	else
 	{
 		printf("%d is zero\n", n);
 	}
