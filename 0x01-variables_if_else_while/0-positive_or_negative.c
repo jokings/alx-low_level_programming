@@ -2,12 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * Main - This programm will assign a random number to the
- * variables n each time it is executed.
- *
- * Description: 'if the number is greater than 0: is postive
+ * main - this program will assign a random to the variable n
+ * each time it is executed
+ * if the number is greater than 0: is positive
  * if the number is 0: is zero
- * if the number is less than o: is negative'
+ * if number is less than 0: is negative
  * Return: 0
  */
 int main(void)
