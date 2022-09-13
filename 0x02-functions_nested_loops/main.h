@@ -11,3 +11,5 @@ void times_tables(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
+int _natural(int n);
+int _fibonacci(int n);
