@@ -4,37 +4,48 @@
  * print_times_table - a function that prints the n times table,
  * starting with 0
  * @n: number input
- * rone = row, cone = column, d = digits of current result
  * Return:  times table
  */
 void print_times_table(int n)
 {
-	int rone, cone, d;
+	int x, y, z;
 
-	for (rone = 0; rone <= n; rone++)
+	if (n >= 0 && n <= 14)
 	{
-		_putchar('0');
-		_putchar(',');
-		_putchar(' ');
-		for (cone = 1; cone <= n; cone++)
+		for (x = 0; x <= n; x++)
 		{
-			d = (rone * cone);
-			if ((d / 10) > 0)
+			for (y = 0; y <= n; y++)
 			{
-				_putchar((d / 10) + '0');
+				z = x * y;
+				if (z > 99)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar((z / 100) + '0');
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+				else if (y > 9)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar(32);
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+				else
+				{
+					if (y != 0)
+					{
+						_putchar(',');
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
+					}
+					_putchar(z + '0');
+				}
 			}
-			else
-			{
-				_putchar(' ');
-			}
-			_putchar((d % 10) + '0');
-
-			if (cone < n)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
